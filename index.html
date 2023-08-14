@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Margin and Padding exercise 2</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="landing-page-left">
-      <div class="site-logo"><img src="emb_logo_kreuz_rot_bold_03-6-210x300.png" alt="EMB"></div>
+      <div class="site-logo">
+        <img src="emb_logo_kreuz_rot_bold_03-6-210x300.png" alt="EMB">
+        <div class="site-logo-text">
+          Tagzeitengebet
+        </div>
+      </div>
       <div class="background-photo-source">
         Foto von <a href="https://unsplash.com/de/@terterian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Artem XCX</a> auf <a href="https://unsplash.com/de/fotos/E0X60lc6_l8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       </div>
@@ -29,43 +34,44 @@
           <p>
             Let’s do this!
           </p>
-
-          <div class="login-field">
-            <label for="firstname">first name</label>
-            <input type="text" name="firstname" id="firstname">
-            <div class="message"></div>
-          </div>
-          <div class="login-field">
-            <label for="lastname">last name</label>
-            <input type="text" name="lastname" id="lastname">
-            <div class="message"></div>
-          </div>
-          <div class="login-field">
-            <label for="email">email</label>
-            <input type="email" name="email" id="email">
-            <div class="message"></div>
-          </div>
-          <div class="login-field">
-            <label for="phone">phone number</label>
-            <input type="phone" name="phone" id="phone">
-            <div class="message"></div>
-          </div>
-          <div class="login-field">
-            <label for="password">password</label>
-            <input type="password" name="password" id="password">
-            <div class="message"></div>
-          </div>
-          <div class="login-field">
-            <label for="confirm">confirm password</label>
-            <input type="password" name="confirm" id="confirm">
-            <div class="message"></div>
+          <div class="login-field-container">
+            <div class="login-field">
+              <label for="firstname">first name</label>
+              <input type="text" name="firstname" id="firstname">
+              <div class="message"></div>
+            </div>
+            <div class="login-field">
+              <label for="lastname">last name</label>
+              <input type="text" name="lastname" id="lastname">
+              <div class="message"></div>
+            </div>
+            <div class="login-field">
+              <label for="email">email</label>
+              <input type="email" name="email" id="email">
+              <div class="message">Please enter a valid email address</div>
+            </div>
+            <div class="login-field">
+              <label for="phone">phone number</label>
+              <input type="tel" name="phone" id="phone">
+              <div class="message"></div>
+            </div>
+            <div class="login-field">
+              <label for="password">password</label>
+              <input type="password" name="password" id="password">
+              <div class="message"></div>
+            </div>
+            <div class="login-field">
+              <label for="confirm">confirm password</label>
+              <input type="password" name="confirm" id="confirm">
+              <div class="message"></div>
+            </div>
           </div>
         </div>
         <div class="login-button-field">
           <button type="submit">Create Account</button>
-        </div>
-        <div class="sign-in-text">
-          Already have an account?  <a href="#">Log in</a>
+          <div class="sign-in-text">
+            Already have an account?  <a href="#">Log in</a>
+          </div>
         </div>
       </form>
 

@@ -1,8 +1,160 @@
-body {
-  background: #eee;
-  font-family: sans-serif;
+:root {
+  --standard-background: #eee;
+  --white-background: #fff;
+  --logo-color: #911300;
+  --logo-color-light: hsl(8, 100%, 50%);
+  --error-color: red;
+  --good-color: green;
+  --font-color: #222;
 }
 
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  align-items: stretch;
+  background-image: url("artem-xcx-E0X60lc6_l8-unsplash.jpg");
+  margin: 0;
+  height: 100vh;
+}
+
+.landing-page-left {
+  background: rgba(1, 1, 1, 0);
+  flex: 2;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.site-logo {
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 20% 0 0;
+  gap: 20px;
+}
+
+.site-logo img {
+  height: 100px;
+}
+
+.site-logo-text {
+  vertical-align: middle;
+  font-size: xx-large;
+  color: var(--logo-color);
+  font-weight: 900;
+}
+
+.background-photo-source {
+  text-align: center;
+  padding: 4pt;
+  color: var(--white-background);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.background-photo-source a {
+  color: var(--logo-color-light);
+  text-decoration: none;
+}
+
+
+.landing-page-body {
+  background: var(--standard-background);
+  flex: 3;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  color: var(--font-color);
+}
+
+.landing-page-top {
+  flex: 3;
+  padding: 8% 10% 10px;
+  font-size: large;
+}
+
+.login-form {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-entries {
+  flex: 2;
+  background: var(--white-background);
+  box-shadow: 0px 10px 10px #ddd;
+  padding: 10px 10% 10px;
+}
+
+.login-form-entries p {
+  font-size: large;
+}
+
+.login-field-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7pt;
+  padding: 0 0 20px;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-field input:valid {
+  border-color: var(--good-color);
+}
+
+.login-field input:invalid {
+  border-color: var(--error-color);
+}
+
+.login-field label {
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.login-field .message {
+  display: none;
+}
+
+.login-field :invalid+.message {
+  display: block;
+  font-size: small;
+}
+
+.login-button-field {
+  flex: 3;
+  padding: 10px 10% 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.login-button-field button {
+  background-color: var(--logo-color);
+  color: var(--standard-background);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 30px;
+  flex-grow: 0;
+  margin: 20px 0px;
+}
+
+.login-button-field a {
+  font-weight: bold;
+  color: var(--logo-color);
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* 
 .title, .content, .button-container {
   margin: 8px;
 }
@@ -38,3 +190,4 @@ button {
   display: block;
   margin: auto;
 }
+*/
