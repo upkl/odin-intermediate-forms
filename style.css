@@ -107,8 +107,21 @@ body {
   border-color: var(--good-color);
 }
 
-.login-field input:invalid {
+.login-field input:invalid,
+.login-field input.invalid {
   border-color: var(--error-color);
+}
+
+.login-field :invalid+.message,
+.login-field .invalid+.message {
+  display: block;
+  font-size: small;
+}
+
+.login-field input:focus {
+  border-color: var(--font-color);
+  outline: none;
+  box-shadow: 3px 3px 3px var(--standard-background);
 }
 
 .login-field label {
@@ -120,10 +133,6 @@ body {
   display: none;
 }
 
-.login-field :invalid+.message {
-  display: block;
-  font-size: small;
-}
 
 .login-button-field {
   flex: 3;
